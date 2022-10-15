@@ -1,0 +1,55 @@
+<table>
+  <tr>
+    <th>Pipe</th>
+    <th>Value</th>
+    <th>Result</th>
+  </tr>
+
+  <tr>
+    <td>titlecase</td>
+    <td>{{ title }}</td>
+    <td>{{ title | titlecase }}</td>
+  </tr>
+
+  <tr>
+    <td>uppercase</td>
+    <td>{{ title }}</td>
+    <td>{{ title | uppercase }}</td>
+  </tr>
+
+  <tr>
+    <td>lowercase</td>
+    <td>{{ title }}</td>
+    <td>{{ title | lowercase }}</td>
+  </tr>
+
+  <tr *ngFor="let user of users | slice:0:3">
+    <td>slice</td>
+    <td></td>
+    <td>{{ user }}</td>
+  </tr>
+
+  <tr>
+    <td>decimal</td>
+    <td>{{ price }}</td>
+    <td>{{ price | number:'.0-2' }}</td>
+  </tr>
+
+  <tr>
+    <td>date</td>
+    <td>{{ today }}</td>
+    <td>{{ today | date:'dd MMMM YYYY' }}</td>
+  </tr>
+
+  <tr>
+    <td>percent</td>
+    <td>{{ percent }}</td>
+    <td>{{ percent | percent }}</td>
+  </tr>
+
+  <tr>
+    <td>json</td>
+    <td>{{ data }}</td>
+    <td><pre>{{ data | json }}</pre></td>
+  </tr>
+</table>

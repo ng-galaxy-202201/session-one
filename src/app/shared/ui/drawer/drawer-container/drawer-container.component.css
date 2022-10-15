@@ -1,0 +1,9 @@
+:host {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.drawer-content {
+  flex-grow: 1;
+}

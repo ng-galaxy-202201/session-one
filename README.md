@@ -1,27 +1,72 @@
-# SessionOne
+# Angular 14 - Sesión 1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
+## Como generar un proyecto - configuración base
 
-## Development server
+La opción `--defaults` habilita la configuración mas basica (sin rutas y con css puro)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```
+ng new nombre-del-proyecto --defaults
+```
 
-## Code scaffolding
+## Ejecutar el proyecto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Las opciones `-o` o `--open` abren el navegador luego de ejecutar el proyecto
 
-## Build
+```
+ng serve
+ng serve -o
+ng serve --open
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`npm start` o `npm run start` lee el script configurado en el `package.json`
 
-## Running unit tests
+## Crear un componente
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Forma completa
 
-## Running end-to-end tests
+```
+ng generate component nombre-del-componente
+ng generate component nombre-de-la-carpeta/nombre-del-componente
+ng generate component nombre-de-la-carpeta/nombre-de-la-subcarpeta/nombre-del-componente
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Forma corta
 
-## Further help
+```
+ng g c nombre-del-componente
+ng g c nombre-de-la-carpeta/nombre-del-componente
+ng g c nombre-de-la-carpeta/nombre-de-la-subcarpeta/nombre-del-componente
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Crear un modulo
+
+```
+ng generate module nombre-del-componente
+ng generate module nombre-de-la-carpeta/nombre-del-componente
+ng generate module nombre-de-la-carpeta/nombre-de-la-subcarpeta/nombre-del-componente
+```
+
+```
+ng g m nombre-del-componente
+ng g m nombre-de-la-carpeta/nombre-del-componente
+ng g m nombre-de-la-carpeta/nombre-de-la-subcarpeta/nombre-del-componente
+```
+
+## Tarea 1
+
+- Colegio
+  - Asistencia
+    - Salon
+    - Curso
+    - Alumno
+    - Profesor
+
+Crear un proyecto con la siguiente estructura representada en modulos
+
+- Cada modulo debe tener un componente
+- Cada component de los submodulos de Asistencia debe estar en el html de asistencia
+- Asistencia debe verse en el app component html
+
+- enviar un video mostrando resultado y codigo (explicado)
+- enviar a luis.vilcarromero.ortiz@gmail.com con asunto [Angular14] Apellido y Nombre 
+

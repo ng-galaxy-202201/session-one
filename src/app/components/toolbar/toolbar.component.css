@@ -1,0 +1,33 @@
+
+
+.spacer {
+  flex: 1;
+}
+
+:host {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+:host img {
+  margin: 0 16px;
+}
+
+:host #twitter-logo {
+  height: 40px;
+  margin: 0 8px;
+}
+
+:host #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+:host #twitter-logo:hover,
+:host #youtube-logo:hover {
+  opacity: 0.8;
+}

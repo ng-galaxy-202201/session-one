@@ -1,0 +1,8 @@
+<div class="terminal" [ngSwitch]="selectionValue">
+  <app-code *ngSwitchDefault code="hola mundo">ng generate component xyz</app-code>
+  <app-code *ngSwitchCase="'material'">ng add @angular/material</app-code>
+  <app-code *ngSwitchCase="'pwa'">ng add @angular/pwa</app-code>
+  <app-code *ngSwitchCase="'dependency'">ng add _____</app-code>
+  <app-code *ngSwitchCase="'test'">ng test</app-code>
+  <app-code *ngSwitchCase="'build'">ng build</app-code>
+</div>

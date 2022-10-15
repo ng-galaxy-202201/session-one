@@ -1,0 +1,14 @@
+<app-drawer-container>
+  <app-drawer [opened]="true">
+    <ul>
+      <li *ngFor="let option of options" (click)="optionSelected = option.section">
+        {{ option.title }}
+      </li>
+    </ul>
+  </app-drawer>
+
+  <div [ngSwitch]="optionSelected">
+    <app-catalog *ngSwitchDefault></app-catalog>
+    <app-settings *ngSwitchCase="'setting'"></app-settings>
+  </div>
+</app-drawer-container>

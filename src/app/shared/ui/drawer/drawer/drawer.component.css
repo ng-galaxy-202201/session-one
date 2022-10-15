@@ -1,0 +1,9 @@
+:host {
+  width: 200px;
+  border-right: 1px solid;
+  transition: .2s;
+}
+
+:host.active {
+  margin-left: -200px;
+}
